@@ -1,0 +1,93 @@
+Options +FollowSymlinks
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} !^www\.gustavomarangoni\.com
+RewriteRule (.*) http://www.gustavomarangoni.com/$1 [L,R=301]
+
+#AuthUserFile /home/nc000635/public_html/.htpasswd
+#AuthType Basic
+#AuthName "Marangoni"
+#Require valid-user
+
+# cookie can't be set and read in the same request so check
+#RewriteCond %{QUERY_STRING} (^|&)mobile=0(&|$)
+#RewriteRule ^ - [S=1]
+
+#RewriteCond %{REQUEST_URI} !^/m/.*$
+#RewriteCond %{HTTP:Cookie}        !\mobile=0(;|$)
+#RewriteCond %{HTTP_USER_AGENT} "android|blackberry|ipad|iphone|ipod|iemobile|opera     mobile|palmos|webos|googlebot-mobile" [NC]
+#RewriteCond %{HTTP_USER_AGENT} !ipad [NC]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ /m/$1 [R=302,L]
+
+#RewriteRule ^m/$mobile.html?search= [L] [NS]
+#RewriteRule ^m/(.*)/(.*)_n([0-9]+)$ m/nota.php?seccion=$1&codigo=$3 [L] [NS]
+#RewriteRule ^m/(.*)/$ m/seccion.php?seccion=$1 [L]
+#RewriteRule ^m/(.*)/p_([0-9]+)$ m/seccion.php?seccion=$1&pagina=$2 [L]
+
+
+RewriteRule ^en-la-prensa(/)?$ tapas.php [L] [NS]
+RewriteRule ^en-la-prensa/([0-9]+)-(.*)$ magazine.php?codigo=$1 [L] [NS]
+RewriteRule ^en-la-prensa/iframe/([0-9]+)-(.*)/([0-9]+)$ magazine_iframe_ajax.php?codigo=$1&pagina=$3 [L] [NS]
+RewriteRule ^en-la-prensa/iframe/([0-9]+)-(.*)$ magazine_iframe.php?codigo=$1 [L] [NS]
+
+RewriteRule ^(.*)/(.*)_n([0-9]+)$ noticia.php?codigo=$3 [L] [NS]
+RewriteRule ^enviar-comentarios$ noticia_comentarios_upd.php [L] [NS]
+RewriteRule ^comentarios-lst/([0-9]+)/([0-9]+)(/)?$ noticia_comentarios_lst.php?codigo=$1&pagina=$2 [L] [NS]
+
+RewriteRule ^(.*)_p([0-9]+)$ pagina.php?codigo=$2 [L] [NS]
+RewriteRule ^(.*)_c([0-9]+)$ formulario.php?codigo=$2 [L] [NS]
+RewriteRule ^(.*)_c([0-9]+)/ok$ formulario_enviado.php?codigo=$2 [L] [NS]
+
+RewriteRule ^eventos$ eventos.php [L] [NS]
+
+RewriteRule ^calendario/(.*)/([0-9]+)$ calendar.php?calendario=$1 [L] [NS]
+
+RewriteRule ^encuesta/([0-9]+)-(.*)/responder$ encuesta_upd.php?codigo=$1 [L] [NS]
+RewriteRule ^encuesta/responder/ajax$ encuesta_upd_ajax.php?codigo=$1 [L] [NS]
+RewriteRule ^encuesta/reload/ajax$ encuesta_resultados.php [L] [NS]
+RewriteRule ^encuesta/([0-9]+)-(.*)/responder/error$ encuesta.php?codigo=$1&error=1 [L] [NS]
+RewriteRule ^encuesta/([0-9]+)-(.*)/responder/ok$ encuesta.php?codigo=$1&enviado=1 [L] [NS]
+RewriteRule ^encuesta/([0-9]+)-(.*)$ encuesta.php?codigo=$1 [L] [NS]
+
+RewriteRule ^([a-zA-Z0-9\-_]+)_t([0-9]+)$ temas.php?temacod=$2 [L] [NS]
+RewriteRule ^([a-zA-Z0-9\-_]+)_t([0-9]+)/([0-9]+)$ temas.php?temacod=$2&pagina=$3 [L] [NS]
+RewriteRule ^([a-zA-Z0-9\-_]+)_t([0-9]+)/r([0-9]+)$ temas_lst.php?temacod=$2&pagina=$3 [L] [NS]
+
+
+RewriteRule ^agenda$ agenda.php [L] [NS]
+RewriteRule ^agenda/([0-9]+)$ agenda.php?pagina=$1 [L] [NS]
+RewriteRule ^agenda/r([0-9]+)$ agenda_lst.php?pagina=$1 [L] [NS]
+RewriteRule ^agenda/(.*)_e([0-9]+)(/)?$ agenda_detalle.php?codigo=$2 [L] [NS]
+
+RewriteRule ^banner/([0-9]+)/(.*)(/)?$ banner_click.php?codigo=$1&codigoSecreto=$2 [L] [NS]
+
+RewriteRule ^galeria(/)?$ galerias.php [L] [NS]
+RewriteRule ^galeria/(.*)_g([0-9]+)$ galeria.php?codigo=$2 [L] [NS]
+#RewriteRule ^galeria/(.*)_g([0-9]+)-([0-9]+)$ galeria.php?codigo=$2&pagina=$3 [L] [NS]
+RewriteRule ^galeria/(.*)_g([0-9]+)_m([0-9]+)$ galeria.php?codigo=$2&elemento=$3 [L] [NS]
+
+RewriteRule ^album/(.*)_a([0-9]+)$ album.php?codigo=$2 [L] [NS]
+
+
+RewriteCond %{QUERY_STRING} ^q=(.*)$ [NC]
+RewriteRule ^(.*)$ /busqueda/%1? [L,R=301] [NC] [NS]
+
+RewriteRule ^busqueda/$ busqueda.php?search= [L] [NS]
+RewriteRule ^busqueda/(.*)/([0-9]+)$ busqueda.php?search=$1&pagina=$2 [L] [NS]
+RewriteRule ^busqueda/(.*)/r([0-9]+)$ busqueda_lst.php?search=$1&pagina=$2 [L] [NS]
+RewriteRule ^busqueda/(.*)$ busqueda.php?search=$1 [L] [NS]
+
+RewriteRule ^tag/(.*)$ tags.php?searchtag=$1 [L] [NS]
+RewriteRule ^tag/(.*)/([0-9]+)$ tags.php?searchtag=$1&pagina=$2 [L] [NS]
+RewriteRule ^tag/(.*)/r([0-9]+)$ tags_lst.php?searchtag=$1&pagina=$2 [L] [NS]
+
+RewriteRule ^([a-zA-Z0-9\-_]+)$ categoria.php?dominio=$1 [L] [NS]
+RewriteRule ^([a-zA-Z0-9\-_]+)/list$ categoria.php?dominio=$1&listado=1 [L] [NS]
+RewriteRule ^([a-zA-Z0-9\-_]+)/([0-9]+)$ categoria.php?dominio=$1&pagina=$2 [L] [NS]
+RewriteRule ^([a-zA-Z0-9\-_]+)/r([0-9]+)$ categoria_lst.php?dominio=$1&pagina=$2 [L] [NS]
+RewriteRule ^([a-zA-Z0-9\-_]+)/([0-9]+)/([0-9]+)(/)?$ categoria_lst_home_ajax.php?dominio=$1&catcod=$2&pagina=$3 [L] [NS]
+
+
+ErrorDocument 404 /errormsg/404.php

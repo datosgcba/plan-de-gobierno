@@ -1,0 +1,153 @@
+<?php xml version="1.0" encoding="UTF-8"?>
+	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>http://marangonilocal.com.ar//</loc>
+	<priority>1.00</priority>
+	<changefreq>always</changefreq>
+	<lastmod>2014-05-05</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/gestion</loc>
+	<priority>0.90</priority>
+	<changefreq>daily</changefreq>
+	<lastmod>2014-04-22</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/</loc>
+	<priority>0.90</priority>
+	<changefreq>daily</changefreq>
+	<lastmod>2013-07-25</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/jornadas-de-trabajo</loc>
+	<priority>0.90</priority>
+	<changefreq>daily</changefreq>
+	<lastmod>2014-04-10</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/historias-de-vida</loc>
+	<priority>0.90</priority>
+	<changefreq>daily</changefreq>
+	<lastmod>2014-04-10</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/libros</loc>
+	<priority>0.90</priority>
+	<changefreq>daily</changefreq>
+	<lastmod>2014-04-10</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/gestion/list</loc>
+	<priority>0.90</priority>
+	<changefreq>daily</changefreq>
+	<lastmod>2014-04-10</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/radio</loc>
+	<priority>0.90</priority>
+	<changefreq>daily</changefreq>
+	<lastmod>2014-04-10</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/cine</loc>
+	<priority>0.90</priority>
+	<changefreq>daily</changefreq>
+	<lastmod>2014-04-10</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/lo-que-hago</loc>
+	<priority>0.90</priority>
+	<changefreq>daily</changefreq>
+	<lastmod>2014-04-10</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/lo-que-digo</loc>
+	<priority>0.90</priority>
+	<changefreq>daily</changefreq>
+	<lastmod>2014-04-10</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/lo-que-pienso</loc>
+	<priority>0.90</priority>
+	<changefreq>daily</changefreq>
+	<lastmod>2014-04-10</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/futbol</loc>
+	<priority>0.90</priority>
+	<changefreq>daily</changefreq>
+	<lastmod>2014-04-10</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/podcats</loc>
+	<priority>0.90</priority>
+	<changefreq>daily</changefreq>
+	<lastmod>2014-04-10</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/libros/probando_n24</loc>
+	<priority>0.90</priority>
+	<changefreq>weekly</changefreq>
+	<lastmod>2014-04-25</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/gestion/prueba_n22</loc>
+	<priority>0.90</priority>
+	<changefreq>weekly</changefreq>
+	<lastmod>2014-04-25</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/gestion/avanzan-42--los-creditos-y-suben-los-depositos_n20</loc>
+	<priority>0.90</priority>
+	<changefreq>weekly</changefreq>
+	<lastmod>2014-04-26</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/lo-que-digo/entrevista-de-gustavo-marangoni-en-infobae_n19</loc>
+	<priority>0.90</priority>
+	<changefreq>weekly</changefreq>
+	<lastmod>2014-04-25</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/gestion/el-sciolismo-critica-a-sergio-massa---era-caperucita-roja-y-ahora-es-el-lobo-feroz-_n18</loc>
+	<priority>0.90</priority>
+	<changefreq>weekly</changefreq>
+	<lastmod>2014-04-10</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/gestion/gustavo-marangoni-presidira-el-bapro_n17</loc>
+	<priority>0.90</priority>
+	<changefreq>weekly</changefreq>
+	<lastmod>2014-04-22</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/sociedad_p198</loc>
+	<priority>0.80</priority>
+	<changefreq>weekly</changefreq>
+	<lastmod>2013-07-25</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/tag/depositos</loc>
+	<priority>0.70</priority>
+	<changefreq>weekly</changefreq>
+	<lastmod>2014-05-05</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/tag/marangoni</loc>
+	<priority>0.70</priority>
+	<changefreq>weekly</changefreq>
+	<lastmod>2014-05-05</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/tag/creditos</loc>
+	<priority>0.70</priority>
+	<changefreq>weekly</changefreq>
+	<lastmod>2014-05-05</lastmod>
+</url>
+<url>
+	<loc>http://marangonilocal.com.ar/agenda</loc>
+	<priority>0.70</priority>
+	<changefreq>always</changefreq>
+	<lastmod>2014-05-05</lastmod>
+</url>
+</urlset>

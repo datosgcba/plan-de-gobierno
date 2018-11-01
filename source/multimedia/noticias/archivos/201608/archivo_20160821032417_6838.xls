@@ -1,0 +1,44 @@
+Array
+(
+    [rolcod] => 10
+    [usuariocod] => 1
+    [usuarionombre] => Alejandro
+    [usuarioapellido] => Precioso
+    [usuarioid] => 0
+    [sistema] => SITIOCONFIGURACION
+    [mostrarmsgbloqueo] => SI
+    [organismocod] => 
+    [organismonombre] => 
+    [usuariosistemacod] => 
+    [modcod] => 47
+    [modulocodsel] => 2000
+    [volverencuesta] => enc_encuesta.php
+    [datosbusquedafiltro] => Array
+        (
+            [encuestacod] => 
+            [encuestatitulo] => 
+            [encuestafdesde] => 
+            [encuestafhasta] => 
+            [encuestaestadocod] => 30
+            [_search] => false
+            [nd] => 1435397390515
+            [rows] => 20
+            [page] => 1
+            [sidx] => encuestacod
+            [sord] => desc
+        )
+
+    [datosbusquedaparticipantes] => Array
+        (
+            [participanteedad] => 
+            [participantesexo] => 
+            [encuestacod] => 2
+            [_search] => false
+            [nd] => 1435397488797
+            [rows] => 20
+            [page] => 1
+            [sidx] => participantecod
+            [sord] => desc
+        )
+
+)
